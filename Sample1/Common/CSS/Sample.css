@@ -1,0 +1,80 @@
+﻿html, form { margin: 0; padding: 0; }
+body { margin: 0; padding: 0; font: normal 12px Tahoma, Arial, 'Helvetica Neue', Helvetica, Verdana, sans-serif; color: #444444; background: #dde0e5; }
+img { border: 0; }
+a { color: #004990; text-decoration: none; }
+a:hover, a:focus { color: #669AE1; text-decoration: underline; }
+h2 { color: #004990; font-weight: bold; font-size: 16px; font-family: Tahoma, Arial, ‘Helvetica Neue’, Helvetica, Verdana, sans-serif; padding: 10px 0 5px 0; margin: 0; }
+p { margin: 0; padding: 5px 0 10px 0; }
+ul { list-style-type: square; margin: 0; padding: 5px 0 5px 25px; }
+li { padding: 0; margin: 0 0 7px 0; }
+#Wrap, #Wrapper { width: 990px; margin: 0 auto; padding:0; }
+#notifyUserHTML {display: none;height: 75px; background-color: #ffeded; border: 1px #640D0D solid; vertical-align:middle; position: relative;}
+.browserCapabilityText { float:left; padding:15px 0 0 250px;text-align: left; font-family:Tahoma, Arial, 'Helvetica Neue', Helvetica, Verdana, sans-serif; color:#6b0000;}
+.browserCapabilityIcons { float:right; padding:0 250px 0 0; } 
+.heading { cursor: pointer; position: relative; font-size: 12px; text-decoration: none; font-weight: normal; padding: 5px 0 5px 0; }
+.hidden { text-indent: -9999px; position: absolute; list-style-type: none; display: inline-block; overflow:hidden; }
+#contentWrapper { /*background: url('/common/images/backgrounds/leftNavBackDropshdwBottom.jpg') repeat-y;*/ width: 990px; float: left; overflow: hidden; margin: 0; padding: 0; position:relative; z-index:5;behavior: url(pie.htc); background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffffff), to(#cfcfcf)); background: -webkit-linear-gradient(top, #ffffff, #cfcfcf);background: -moz-linear-gradient(top, #ffffff, #cfcfcf);background: -ms-linear-gradient(top, #ffffff, #cfcfcf);-pie-background: linear-gradient(#ffffff, #cfcfcf);}
+ #NavShadow{behavior: url(pie.htc);-webkit-box-shadow:-4px -4px 6px 0 rgba(102, 102, 102, 0.4) inset;-moz-box-shadow:-4px -4px 6px 0 rgba(102, 102, 102, 0.4) inset;box-shadow:-4px -4px 6px 0 rgba(102, 102, 102, 0.4) inset;width: 198px;zoom: 1;}
+#leftNav { float: left; overflow: hidden; padding: 0; margin: 0; }
+#RightNavwrap { background: url('../images/backgrounds/RightNavbg.jpg') bottom right repeat-y; width:990px; overflow:hidden;}
+#content { background: url('../images/backgrounds/spotlight2.jpg') repeat-y; overflow: hidden;padding:0; margin: 0; float:right; clear: right; }
+#banners { background: #ffffff; width: 582px; height: 220px; padding: 0; margin: 0; position:relative; color:#ffffff;}
+#banners a, #banners a:hover, #banners a:visited { text-decoration: none; color: #004990; }
+#banners .heading { margin: 0; padding:15px 0 15px 30px; font-family: Garamond, Georgia, ‘Times New Roman’, Times, serif; font-size: 24px; color: #004990; font-weight:bold; cursor:auto; line-height:normal;}
+#banners p { width: 330px; padding: 0 0 15px 30px; color: #444444; }
+#banners .More { margin: 15px 0 20px 30px; display: block; font-weight: bold; float: left; }
+#banners .More p { color: #004990; padding: 5px 0 0 0; margin:0; cursor:pointer; }
+#bottomNav2 a { padding: 10px 10px 10px 0; margin: 0;color: #ffffff; }
+#bottomNav2 a:hover, #bottomNav2 a:focus { color: #ffffff; text-decoration: underline; padding: 0 10px 0 0; margin: 0; }
+#bottomNav2 { padding: 10px 0 0 0; margin: 0; background: #13498a; overflow: hidden; font-size: 11px; height: 62px; clear: both; }
+#bottomNav2 ul { clear: left; padding: 0; text-align: center; height: 20px; }
+#bottomNav2 ul li { text-align: center; list-style-type: none; /*float: left;*/ border-right: 1px solid #ffffff; /*background: url('/common/images/buttons/pipe.jpg') no-repeat right;*/ margin: 0; padding: 0 0 0 10px; display: inline; }
+#bottomNav2 .last { border: none; }
+.bottomNav2Content { width: 990px;margin: 0 auto;padding: 0 0 10px 0;}
+.bottomNav2Content ul{ list-style-type: none;padding: 5px 0 10px 0;}
+#copyright { margin: 0 0 0 0; padding: 0; text-align: center; color: #ffffff; letter-spacing: 1.5px; font-size: 10px; word-spacing: 2px;text-transform: uppercase; }
+#MainContentDiv {margin: 0; padding: 0; clear:left; float:right; position: relative; }
+#ExitWarning { height: 280px; width: 420px; background: #E1E6F5; padding: 20px 10px 0 10px; margin: 0; display: none; position:relative; z-index:994; }
+#ExitWarning p { font-size: 14px; padding: 10px 30px 15px 10px; line-height: 22px; }
+#ExitWarning .heading { margin: 0 0 5px 10px; padding: 5px 0 10px 0; font-family: Garamond, Georgia, ‘Times New Roman’, Times, serif; font-size: 24px; color: #004990; font-weight:bold; cursor:auto; line-height:normal;  }
+#ExitWarning #buttons { width: 315px; margin: 0 auto; padding: 10px 0 0; }
+#ExitWarning .btnBack { display: inline-block; background: url('../images/backgrounds/exitBtnBack.gif') repeat-x; color: #ffffff; font-size: 18px; border: 0; font-weight: bold; margin: 0 20px 0 0; padding: 8px 10px 12px; width: 115px; text-align: center; cursor: pointer; }
+/* Start New Homepage*/
+#HomepageMainNavigation {height: 34px;behavior: url(pie.htc); background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#2a6dae), to(#113367)); background: -webkit-linear-gradient(top, #2a6dae, #113367);background: -moz-linear-gradient(top, #2a6dae, #113367);background: -ms-linear-gradient(top, #2a6dae, #113367);-pie-background: linear-gradient(#2a6dae, #113367);position: relative;z-index: 1003;}
+.rope { background: url('../images/backgrounds/rope.jpg') repeat-x;height: 4px;clear: both;}
+#HomepageMainNavContent { width: 990px;margin: 0 auto;position: relative;}
+#HomepageMainNav {float:left;}
+#HomepageTopNav { font-size: 14px; font-weight: bold; padding: 0 18px 0 0; margin: 0; float:right;}
+.header { width: 990px; height: 83px; /*background: url('/common/images/backgrounds/headerback.jpg') no-repeat;*/ background:#ffffff;margin: 0; padding: 0; clear:both;}
+.header #TriWestLogo { padding: 11px 0 0 20px; margin: 0; display: inline-block; float: left; }
+.SocialMedia {float:right; padding:11px 25px 0  0; margin:0;width: 100px;}
+.SocialMedia p {float:right; margin:0;}
+.SocialMedia #fontAdjust { float:none; padding:0; margin:0;width: 100px;}
+.SocialMedia #fontAdjust p {margin:0; padding:0; float:right;}
+.FontSmall {font-size:9px;}
+.FontNormal {font-size:12px;}
+.FontLarge {font-size:21px;}
+.HomepageContent {margin:0;padding:5px 7px 20px 28px;background:#ffffff;position:relative;overflow: hidden;}
+.HomepageNewsWrapper { margin: 0; padding: 0 0 20px 28px; background: #ffffff; position: relative; overflow: hidden; width: 962px; }
+.HomepageContent #banners { width: 700px; /*height: 333px;*/ position: relative; }
+.HomepageContent #banners .BannerOuterContent { background: url('../images/backgrounds/homepage_dropshadow.png') no-repeat left bottom; height: 260px; width: 700px; }
+.HomepageContent #banners .heading { font-family: Georgia; font-size: 34px; font-weight: normal; color: #343333; width: 470px; padding: 5px 0 10px 20px; }
+.HomepageContent #banners .heading2 { font-family: Tahoma; font-size: 18px; color: #004490; line-height: 24px; padding: 0 0 10px 20px; }
+.HomepageContent #banners p { font-size: 14px; padding: 0 0 10px 20px; width: 400px; }
+.HomepageContent #banners a { display: block;}
+.HomepageContent #banners .More { width: 152px; height: 40px; behavior: url(pie.htc); background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#006dab), to(#004285)); background: -webkit-linear-gradient(top, #006dab, #004285); background: -moz-linear-gradient(top, #006dab, #004285); background: -ms-linear-gradient(top, #006dab, #004285); -pie-background: linear-gradient(#006dab, #004285); color: #ffffff; position: relative; z-index: 2; margin: 5px 0 0 20px; }
+.HomepageContent #banners .More p { color: #ffffff;margin: 0 0 0 20px;padding: 10px 0 0 0;width: 105px;}
+.HomepageContent #banners .More p span {padding: 0 0 0 8px;}
+.HomepageContent #banners .More .checkMark { background: url('../images/backgrounds/golden_arrow.png') no-repeat;height: 18px;width: 18px;border-right: 1px solid #ffffff;float: left;margin: 10px 0 0 13px;padding: 0 6px 0 0;}
+.HomepageContent ul, .HomepageNewsWrapper ul {list-style-type:none; margin:0; padding:0;}
+.HomepageContent li, .HomepageNewsWrapper li {float:left;margin:0; padding:0;}
+.HomepageContent h2, .HomepageNewsWrapper h2 {padding:16px 0 5px 0;font-weight: normal;font-size: 24px;}
+#HomepageRightColumn {width:230px; background:#ffffff; margin:0 2px 0 0;padding: 0;float:right;}
+#HomepageRightColumn .HomepageSideNav ul {list-style-type:none; padding: 0 0 11px 0;}
+#HomepageRightColumn .HomepageSideNav ul li { background: #004490 url('../images/backgrounds/homepage_navBack.jpg') no-repeat; width: 214px; height: 41px; margin: 0 0 9px 0; }
+#HomepageRightColumn .HomepageSideNav ul li a { display: block; font-family: Tahoma, Arial, ‘Helvetica Neue’, Helvetica, Verdana, sans-serif; font-size: 14px; font-weight: bold; padding: 11px 0 0 8px; margin: 0; color: #ffffff; text-transform: uppercase; }
+.HomepageNews {width:200px; margin:0; padding:2px 43px 0 0;}
+.HomepageNewsWrapper .last { padding: 2px 0 0 2px;}
+.HomepageNews h2 {padding:5px 0 4px 0; font-family:Georgia, Tahoma, Arial, ‘Helvetica Neue’, Helvetica, Verdana, sans-serif;clear:both;font-size: 20px;}
+.HomepageNews img { border: 3px solid #bf9923;}
+/* End New Homepage */

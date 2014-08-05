@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Lorem ipsum dolor</title>
+<link href="common/CSS/colorbox.css" rel="stylesheet" type="text/css" />
+<link href="Common/CSS/Sample.css" rel="stylesheet" type="text/css" />
+<script src="common/JS/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="common/JS/jquery.simplemodal-1.4.1.js" type="text/javascript"></script>
+<script src="common/JS/behaviors.js" type="text/javascript"></script>
+<script src="common/JS/sample.js" type="text/javascript"></script>
+</head>
+
+<body>
+	<div style="display: none;" id="cboxOverlay"></div>
+	<div class="" id="colorbox" style="padding-bottom: 20px; padding-right: 0; display: none;">
+		<div style="" id="cboxWrapper">
+			<div style="">
+				<div style="float: left;" id="cboxTopLeft"></div>
+				<div style="float: left;" id="cboxTopCenter"></div>
+				<div style="float: left;" id="cboxTopRight"></div>
+			</div>
+			<div style="clear: left;">
+				<div style="float: left;" id="cboxMiddleLeft"></div>
+				<div style="float: left;" id="cboxContent">
+					<div class="" style="width: 0; height: 0; overflow: hidden;" id="cboxLoadedContent"></div>
+					<div class="" style="" id="cboxLoadingOverlay"></div>
+					<div class="" style="" id="cboxLoadingGraphic"></div>
+					<div class="" style="" id="cboxTitle"></div>
+					<div class="" style="" id="cboxCurrent"></div>
+					<div class="" style="" id="cboxNext"></div>
+					<div class="" style="" id="cboxPrevious"></div>
+					<div class="" style="" id="cboxSlideshow"></div>
+					<div class="" style="" id="cboxClose"></div>
+				</div>
+				<div style="float: left;" id="cboxMiddleRight"></div>
+			</div>
+			<div style="clear: left;">
+				<div style="float: left;" id="cboxBottomLeft"></div>
+				<div style="float: left;" id="cboxBottomCenter"></div>
+				<div style="float: left;" id="cboxBottomRight"></div>
+			</div>
+		</div>
+		<div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div>
+	</div>
+
+	<ul class="hidden">
+		<li><a href="#contentStart" title="Click to skip to content">skip to content</a></li>
+	</ul>
+	<form id="Form1" runat="server">
+		<div id="HomepageMainNavigation">
+			<div id="HomepageMainNavContent">
+				<div id="HomepageMainNav"></div>
+				<div id="HomepageTopNav"></div>
+			</div>
+		</div>
+		<div class="rope"></div>
+		<div id="Wrap">
+
+			<div id="notifyUserHTML">
+				<div class="browserCapabilityText">
+					<strong>You are using an outdated browser</strong>
+					<br />
+					For a better experience using this site,
+		<br />
+					please upgrade to a modern browser
+				</div>
+				<div class="browserCapabilityIcons">
+					<a href="http://www.browserforthebetter.com/" target="_blank" title="Download Internet Explorer">
+						<img src="common/images/icons/ie.jpg" alt="Download Internet Explorer" /></a>
+					<a href="http://www.firefox.com/" target="_blank" title="Download Firefox">
+						<img src="common/images/icons/firefox.jpg" alt="Download Firefox" /></a>
+					<a href="http://www.apple.com/safari/download/" target="_blank" title="Download Safari">
+						<img src="common/images/icons/safari.jpg" alt="Download Safari" /></a>
+					<a href="http://www.google.com/chrome" target="_blank" title="Download Google Chrome">
+						<img src="common/images/icons/chrome.jpg" alt="Download Google Chrome" /></a>
+				</div>
+			</div>
+			<div class="header">
+				<a href="/" title="Lorem ipsum dolor">
+					<img id="TriWestLogo" src="common/Images/logos/TriWest-logo-homepage.png" alt="Lorem ipsum dolor Logo" title="Lorem ipsum dolor" /></a>
+				<div class="SocialMedia">
+					<p><a href="#" title="Watch us on Youtube" target="_blank">
+						   <img alt="Watch us on Youtube" src="common/images/logos/youtube.png" /></a> <a href="#" title="Follow us on Twitter" target="_blank">
+							<img src="common/images/logos/twitter_24x24.png" alt="Follow us on Twitter" /></a> <a href="#" title="Like us on Facebook" target="_blank">
+								<img src="common/images/logos/facebook.png" alt="Like us on Facebook" /></a></p>
+
+					<div id="fontAdjust">
+						<p>
+							Size <span class="FontSmall"><a title="Decrease Font Size" href="#" onclick="changeFont('down')" onkeypress="changeFont('down')">A</a></span>
+							<span class="FontNormal"><a title="Default Font Size" href="#" onclick="changeFont('default')" onkeypress="changeFont('default')">A</a></span>
+							<span class="FontLarge"><a title="Increase Font Size" href="#" onclick="changeFont('up')" onkeypress="changeFont('up')">A</a></span>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div id="contentWrapper">
+				<div id="NavShadow">
+					<div id="RightNavwrap">
+						<div id="leftNav"></div>
+						<div id="content">
+							<a class="hidden" tabindex="-1" name="contentStart" id="contentStart">&nbsp;</a>
+							<div id="MainContentDiv">
+								<div class="HomepageContent">
+									<div id="HomepageRightColumn">
+										<div class="HomepageSideNav">
+											<ul>
+												<li><a href="#" title="Lorem ipsum">Lorem ipsum</a></li>
+												<li><a href="#" title="dolor sit amet">dolor sit amet</a></li>
+												<li><a href="#" title="consectetur adipiscing">consectetur</a></li>
+												<li><a href="#" title="Suspendisse facilisis">Suspendisse</a></li>
+												<li><a href="#" title="metus at magna">metus at magna</a></li>
+											</ul>
+										</div>
+									</div>
+									<div id="banners">
+										<div class="BannerOuterContent">
+											<div slide="0" style="background: url('Global/image-carousel/Serving_Those_Who_Serve.jpg') no-repeat; width: 700px; height: 333px;">
+												<a title="Serving Those Who Serve" href="#">
+													<div>
+														<p class="heading">Lorem ipsum dolor sit amet</p>
+														<p class="heading2">consectetur adipiscing elit</p>
+														<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed porttitor arcu. Integer vestibulum commodo magna, ac convallis risus rutrum nec. Fusce sed felis a augue tincidunt pulvinar aliquet at elit. Nam posuere lectus eget orci sodales cursus.</p>
+													</div>
+													<div class="More">
+														<div class="checkMark"></div>
+														<p class=""><span>Read More</span></p>
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+									<script type="text/javascript">
+										//<![CDATA[
+										var SLIDE_DELAY = 9000;
+										var SLIDE_SPEED = 2000;
+										//]]>
+									</script>
+								</div>
+								<div class="HomepageNewsWrapper">
+									<ul>
+										<li>
+											<div class="HomepageNews">
+												<a href="#" title="Lorem ipsum">
+													<img src="common/Images/spotlights/vapccc.jpg" alt="/en/About-TriWest/triwest-news/spotlight/vapccc.jpg" /></a>
+												<h2><a href="#" title="Lorem ipsum">Lorem ipsum</a></h2>
+												<div>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat tristique nisi egestas laoreet. Nullam placerat sapien id viverra sollicitudin. Quisque porta sapien sem, vitae ultrices nisi.</p>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="HomepageNews">
+												<a href="#" title="dolor sit">
+													<img src="common/Images/spotlights/behavioralhealth.jpg" alt="/en/About-TriWest/triwest-news/corp-news-archive/behavioralhealth.jpg" /></a>
+												<h2><a href="#" title="dolor sit">dolor sit</a></h2>
+												<div>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel auctor tellus, nec porta nisi. Nam sed sollicitudin.</p>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="HomepageNews">
+												<a href="#" title="amet consectetur">
+													<img src="common/Images/spotlights/aboutTriWest.jpg" alt="/en/About-TriWest/triwest-news/corp-news-archive/aboutTriWest.jpg" /></a>
+												<h2><a href="#" title="amet consectetur">amet consectetur</a></h2>
+												<div>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultrices libero vel enim blandit, vel pretium nisi sagittis. Nunc libero urna.</p>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="HomepageNews">
+												<a href="#" title="adipiscing elit">
+													<img src="common/Images/spotlights/NewsSpotlight.jpg" alt="/en/About-TriWest/triwest-news/spotlight/NewsSpotlight.jpg" /></a>
+												<h2><a href="#" title="adipiscing elit">adipiscing elit</a></h2>
+												<div>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce placerat sit amet purus eget rutrum. Mauris quis tristique metus. Nullam turpis nulla, bibendum vulputate sem vel, malesuada molestie.</p>
+													<p><a title="Read more" target="_blank" href="#">Read more »</a></p>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="rope"></div>
+		<div id="bottomNav2">
+			<div class="bottomNav2Content">
+				<div id="copyright">
+					<p>
+						Copyright 
+                        <script type="text/javascript">
+						//<![CDATA[
+						var date = new Date();
+						var year = date.getFullYear();
+						document.write(year);
+						//]]>
+						</script>
+		 &#169; - Lorem ipsum dolor
+					</p>
+				</div>
+				<ul>
+					<li><a href="#" title="Terms and Conditions">Terms and Conditions</a></li>
+					<li><a href="#" title="Privacy Policy">Privacy Policy</a></li>
+					<li><a href="#" title="Security Statement">Security Statement</a></li>
+					<li><a href="#" title="Site Map">Site Map</a></li>
+					<li><a href="#" title="Employment">Employment</a></li>
+					<li><a href="#" title="Contact Us">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="ExitWarning">
+			<p class="heading">Lorem ipsum dolor sit amet</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus augue nibh, blandit eu sem non, tempor gravida turpis. Praesent tincidunt tincidunt pulvinar. Phasellus suscipit dui consectetur quam lobortis, a fringilla metus convallis. Mauris imperdiet, dui eget dapibus pretium, diam tortor mollis ligula, a gravida libero augue vel orci. Sed orci metus, eleifend eu mi sit.</p>
+			<div id="buttons"></div>
+		</div>
+</body>
+</html>
