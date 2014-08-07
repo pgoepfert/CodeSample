@@ -47,7 +47,6 @@
 	<ul class="hidden">
 		<li><a href="#contentStart" title="Click to skip to content">skip to content</a></li>
 	</ul>
-	<form id="Form1" runat="server">
 		<div id="HomepageMainNavigation">
 			<div id="HomepageMainNavContent">
 				<div id="HomepageMainNav"></div>
@@ -76,7 +75,7 @@
 						<img src="common/images/icons/chrome.jpg" alt="Download Google Chrome" /></a>
 				</div>
 			</div>
-			<div class="header">
+			<header class="header">
 				<a href="/" title="Lorem ipsum dolor">
 					<img id="TriWestLogo" src="common/Images/logos/TriWest-logo-homepage.png" alt="Lorem ipsum dolor Logo" title="Lorem ipsum dolor" /></a>
 				<div class="SocialMedia">
@@ -93,17 +92,17 @@
 						</p>
 					</div>
 				</div>
-			</div>
+			</header>
 			<div id="contentWrapper">
 				<div id="NavShadow">
 					<div id="RightNavwrap">
 						<div id="leftNav"></div>
 						<div id="content">
 							<a class="hidden" tabindex="-1" name="contentStart" id="contentStart">&nbsp;</a>
-							<div id="MainContentDiv">
+							<main id="MainContentDiv">
 								<div class="HomepageContent">
 									<div id="HomepageRightColumn">
-										<div class="HomepageSideNav">
+										<nav class="HomepageSideNav">
 											<ul>
 												<li><a href="#" title="Lorem ipsum">Lorem ipsum</a></li>
 												<li><a href="#" title="dolor sit amet">dolor sit amet</a></li>
@@ -111,7 +110,7 @@
 												<li><a href="#" title="Suspendisse facilisis">Suspendisse</a></li>
 												<li><a href="#" title="metus at magna">metus at magna</a></li>
 											</ul>
-										</div>
+										</nav>
 									</div>
 									<div id="banners">
 										<div class="BannerOuterContent">
@@ -182,29 +181,30 @@
 										</li>
 									</ul>
 								</div>
-							</div>
+							</main>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="rope"></div>
-		<div id="bottomNav2">
+		<footer id="bottomNav2">
 			<div class="bottomNav2Content">
 				<div id="copyright">
 					<p>
 						Copyright 
-                        <script type="text/javascript">
-						//<![CDATA[
-						var date = new Date();
-						var year = date.getFullYear();
-						document.write(year);
-						//]]>
+						<script type="text/javascript">
+							//<![CDATA[
+							var date = new Date();
+							var year = date.getFullYear();
+							document.write(year);
+							//]]>
 						</script>
 		 &#169; - Lorem ipsum dolor
 					</p>
 				</div>
-				<ul>
+				<nav>
+					<ul>
 					<li><a href="#" title="Terms and Conditions">Terms and Conditions</a></li>
 					<li><a href="#" title="Privacy Policy">Privacy Policy</a></li>
 					<li><a href="#" title="Security Statement">Security Statement</a></li>
@@ -212,8 +212,9 @@
 					<li><a href="#" title="Employment">Employment</a></li>
 					<li><a href="#" title="Contact Us">Contact Us</a></li>
 				</ul>
+				</nav>
 			</div>
-		</div>
+		</footer>
 		<div id="ExitWarning">
 			<p class="heading">Lorem ipsum dolor sit amet</p>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus augue nibh, blandit eu sem non, tempor gravida turpis. Praesent tincidunt tincidunt pulvinar. Phasellus suscipit dui consectetur quam lobortis, a fringilla metus convallis. Mauris imperdiet, dui eget dapibus pretium, diam tortor mollis ligula, a gravida libero augue vel orci. Sed orci metus, eleifend eu mi sit.</p>
