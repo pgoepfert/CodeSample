@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>College Board Web Producer Skills Assessment</title>
+	<link href="css/collegeboard.css" rel="stylesheet" />
+	<link href="css/validationEngine.jquery.css" rel="stylesheet" />
+	<!--[if lt IE 9 ]>
+		<script src="js/modernizr.js"></script>
+		<![endif]-->
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/jquery.validationEngine-en.js"></script>
+	<script src="js/jquery.validationEngine.js"></script>
+	<!--[if lt IE 9 ]>
+	<script src="js/jquery.placeholder.js"></script>
+	<![endif]-->
+	<script src="js/collegeboard.js"></script>
+</head>
+<body>
+	<main>
+			<p><img src="images/ap-stem-hp-initiative.jpg" alt="ap-stem-hp-initiative" class="floatLeft"/> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus enim et leo accumsan eleifend. Phasellus consequat ultricies metus eget aliquam. Donec elementum odio in nulla porttitor luctus. Curabitur at cursus augue. Praesent lobortis sollicitudin ultricies. Fusce non tempus eros. Donec quis sagittis ipsum. Duis fringilla non urna quis varius. Sed elit dui, accumsan ac commodo vel, auctor vel neque. Quisque in nisi id felis euismod mattis.</p>
+			<p><img src="images/ap-teacher-hp-initiative.jpg" alt="ap-teacher-hp-initiative" class="floatRight"/> Sed at sem nisi. In volutpat erat diam, ac adipiscing nisl fermentum non. Quisque rutrum sit amet magna sed lacinia. Praesent sed est purus. Aenean quis sollicitudin erat, at posuere nibh. Duis mollis malesuada volutpat. Proin in nisi rutrum, tincidunt felis nec, sollicitudin erat. Mauris a mollis enim, sed convallis sapien. Nunc malesuada accumsan lectus, at mollis felis. Nulla ultrices volutpat massa at volutpat. Suspendisse odio lorem, tristique vitae iaculis ut, commodo quis massa. Aliquam mollis, elit et hendrerit mattis, ante neque porta libero, at ultricies felis metus eget nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas feugiat commodo magna et cursus.</p>
+			
+			<fieldset>
+				<legend>Sample form</legend>
+				<form id="sampleForm">
+				<div class="formLeft"><label for="txtinput">Sample text input</label></div>
+					<div class="formRight"><input id="txtinput" type="text" placeholder="Enter some text"  class="validate[required] text-input" /></div>
+					<div class="formLeft"><label for="sample">Sample radio buttons</label></div>
+					<div class="formRight"><input type="radio" name="sample" value="Yes"  /> Yes
+						<input type="radio" name="sample" value="No" class="validate[required]"/> No
+					</div>
+					<div class="formLeft"><label for="txtarea">Sample textarea</label></div>
+					<div class="formRight"><textarea id="txtarea" rows="5" cols="45" class="validate[required] text-input" ></textarea></div>
+					<div class="formLeft"><label for="dropdown">Sample dropdown</label></div>
+					<div class="formRight"><select id="dropdown" class="validate[required]">
+												<option value="" selected="selected">Please make a selection</option>
+												<option value="option1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</option>
+												<option value="option2">Phasellus id arcu in augue dignissim varius nec at mauris.</option>
+												<option value="option3">Duis cursus mauris rhoncus, venenatis purus eget, cursus leo.</option>
+												<option value="option4">Mauris sit amet tortor consectetur, pellentesque felis a, porttitor nisi.</option>
+										   </select></div>
+					<div class="formLeft"></div>
+					<div class="formRight"><input type="submit" value="Submit" id="submit"/></div>
+
+			</form>
+			</fieldset>
+			
+		</main>
+</body>
+</html>
