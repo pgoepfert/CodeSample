@@ -1,0 +1,133 @@
+﻿@import "facit";
+
+@HeaderFontStack: FacitWeb-Light;
+@BasefontStack: Helvetica, "Helvetica Neue", Arial, sans-serif, serif; 
+@baseFontSize: 16px;
+@baseFontLineHeight: 26px;
+@color:#ffffff;
+@navcolor:#d6d7d8;
+@navbackground:#282822;
+@navfontstack:FacitWeb-Semibold;
+@linkcolor:#e55d22;
+html{margin:0;padding:0;}
+body { font: @baseFontSize e('/') @baseFontLineHeight @BasefontStack;  /*-moz-background-size: 100% auto; -o-background-size: 100% auto; -webkit-background-size: 100% auto; background-size: 100% auto;*/ 
+	   //TODO: add IE 7/8 hack
+}
+a{
+	text-decoration:none;
+	&:hover,&:focus{text-decoration:underline;}
+}
+ul{list-style-type:none;padding:0;margin:0;} 
+#wrapper{width:1263px; margin:0 auto;background: url('/images/background.jpg') no-repeat;overflow:hidden;}
+header 
+{
+	clear:both;
+	nav{
+		float:right;
+		margin:0;padding:61px 135px 0 0;
+		ul{
+			display:inline;
+		}
+		li{float:left;
+		   background-color:@navbackground;
+		   opacity:0.8;
+		   //padding:5px;
+		   &:first-child{padding:0 52px 0 28px;}
+		   &:nth-child(2){padding:0 49px 0 0;}
+		   &:nth-child(3){padding:0 50px 0 0;}
+		   &:nth-child(4){padding:0 51px 0 0;}
+		   &:last-child{padding:0 20px 0 0;}
+		   a{
+			   display:block;
+			   font-family:@navfontstack;
+			   color:@navcolor;
+			   text-transform:uppercase;
+			   text-decoration:none;
+			   font-size:12px;
+			   &:hover{
+				   text-decoration:none;
+			   }
+		   }
+
+		}
+	}
+}
+#logo {float:left;padding:37px 0 0 135px;}
+#mainContent{clear:left;padding:110px 0 0 0;}
+#slogan{background: url('/images/slogan.png') no-repeat;width: 813px;height: 111px;margin: 0 auto;}
+#CTAContainer{position:relative; padding:0 0 2px;}
+#CTABox{ background: #e4e4e3;
+		 padding: 29px 0 0 32px;
+		 overflow: hidden;
+		 width:963px;
+		 margin:137px 135px;
+		 h1 {font-family: @HeaderFontStack;
+			 font-size: 26px;
+			 line-height:34px;
+			 width:841px;
+			 padding:0;
+			 margin:0;
+		 }
+		 p{width:595px;
+		   padding:8px 0;
+		   font-size:15px;
+		   line-height:22px;
+		   margin:0;
+		 }
+		 aside{padding:38px 56px 0 0;
+			   float:right;
+			  a{
+				  display:block;
+				  font-family:FacitWeb;
+				  font-size:17px;
+				  text-align:center;
+				  text-decoration:none;
+				  padding:3px 12px 8px 27px;
+			  }
+		 }
+		 h2{font-family:@HeaderFontStack;font-size:17px; color:#9d9d9d;padding:19px 0 0 0;}
+}
+
+.button{ background-color: @linkcolor;color:@color;
+		 &:hover,&:focus{background:#e4e4e3;color:@color;}
+}
+.recentWork{width:280px;padding:9px 12px 0 0;margin:0;float:left;
+			&:first-of-type{padding:9px 12px 0 42px;
+			}
+			img{-webkit-box-shadow:  1px 1px 5px 0 #515151;	box-shadow:  1px 1px 5px 0 #515151;display:block;position:relative;z-index:899;}
+}
+#spotlights{position:absolute;bottom:34px;z-index:900; background: #000000;overflow:hidden;width:963px;margin:auto 134px;padding:0 0 57px 33px;}
+.spotlight{width:315px;float:left;color:@color;padding:6px 6px 0 0;
+		   img {display:block;float:left;margin:33px 18px 2px 1px;padding:0 0 10px 0;}
+		   p{font-family:@BasefontStack; font-size:11px;line-height:14px;margin:0; padding:19px 47px 0 0;}
+		   h3{font-family:@HeaderFontStack;font-size:18px;margin:0;padding:15px 0 0 0;}
+		   .learnMore{font-size:12px;font-style:italic;float:right;color:@linkcolor;font-family:FacitWeb;}
+}
+footer { border-top: 2px solid #7b797b; margin: 0 134px; padding: 5px 0 0 0;
+	.siteMap:nth-child(2) { width: 90px; }
+	.siteMap { width: 92px; float: left; font-family: @BasefontStack; font-size: 11px; color: @color;
+		a { color: @color; }
+		ul { padding: 0; margin: 0;
+			li { margin: 0 0 -9px 0; padding: 0;
+				&:nth-child(4) { padding: 25px 0 5px 0; }
+			}
+		}
+	}
+	address { width: 155px; padding: 6px 0 0 0; font-style: normal; }
+	.address { width: 184px; float: left; font-family: @BasefontStack; font-size: 11px; color: @color; line-height: 16px;
+		p { margin: 0; padding: 27px 0 0 0; }
+	}
+	.socialMedia { float: right;font-family:@BasefontStack; font-size:11px; color:@color;overflow:hidden;
+				   a, a:active{color:@color;
+					 &:hover, &:focus{color:@linkcolor;}
+				   }
+		li { background: url(/images/socialmediasprite.png); float: left;padding:0 0 0 20px;height:22px;width:71px;
+			&:first-child {background-position: 0 -17px; background-repeat:no-repeat;
+						   &:hover, &:focus{background-position:0 3px;}
+			}
+			&:last-child{background-position:0 -57px; background-repeat:no-repeat;
+						 &:hover, &:focus{background-position: 0 -38px;}
+			}
+		}
+	}
+}
