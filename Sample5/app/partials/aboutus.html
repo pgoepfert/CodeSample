@@ -1,0 +1,9 @@
+<h1 data-ng-bind="Page.title()"></h1>
+        <div ng-controller="AboutUsCtrl">
+<div class="col-sm-12"  ng-repeat="person in bios">
+    <p ng-bind-html="person.description">{{person.description}}</p>
+    <div class="pull-right">
+        <img class="img-responsive" ng-src="{{person.image}}" alt="{{person.name}}" />
+    </div>
+</div>
+        </div>

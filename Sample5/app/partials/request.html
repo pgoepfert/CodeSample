@@ -1,0 +1,308 @@
+<h1>Service Request</h1>
+<section>
+    <form class="form-horizontal" role="form">
+        <div class="form-group">
+            <label class="control-label col-sm-3" for="name">Full Name:</label>
+            <div class="col-sm-9">
+                <input name="name" id="name" type="text" class="form-control" data-ng-model="form.name" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label" for="address">Street Address:</label>
+            <div class="col-sm-9">
+                <input name="address" id="address" type="text" class="form-control" data-ng-model="form.address" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label" for="city">City:</label>
+        <div class="col-sm-9">
+            <input name="city" id="city" type="text" class="form-control" data-ng-model="form.city" />
+        </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label" for="state">State:</label>
+        <div class="col-sm-9">
+            <input name="state" id="state" type="text" class="form-control" data-ng-model="form.state" />
+        </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label" for="zip">Zip:</label>
+        <div class="col-sm-9">
+            <input name="zip" id="zip" type="text" class="form-control" data-ng-model="form.zip" />
+        </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label" for="phone">Phone (with area code):</label>
+        <div class="col-sm-9">
+            <input name="phone" id="phone" type="tel" class="form-control" data-ng-model="form.phone" />
+        </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label" for="email">Email:</label>
+        <div class="col-sm-9">
+            <input name="email" id="email" type="email" class="form-control" data-ng-model="form.email" />
+        </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label" for="purchaseDate">Date of Purchase: </label>
+        <div class="col-sm-9">
+            <input type="date" id="purchaseDate" class="form-control" data-ng-model="form.purchaseDate" />
+            <!--<select name="dpm" id="dpm">
+                    <option selected="selected" value="1">January</option>
+                    <option value="2">February</option>
+                    <option value="3">March</option>
+                    <option value="4">April</option>
+                    <option value="5">May</option>
+                    <option value="6">June</option>
+                    <option value="7">July</option>
+                    <option value="8">August</option>
+                    <option value="9">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                </select>
+                /&nbsp;					<select name="dpday" id="dpday">
+                                            <option selected="selected" value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>
+                                            <option value="24">24</option>
+                                            <option value="25">25</option>
+                                            <option value="26">26</option>
+                                            <option value="27">27</option>
+                                            <option value="28">28</option>
+                                            <option value="29">29</option>
+                                            <option value="30">30</option>
+                                            <option value="31">31</option>
+                                        </select>
+                /&nbsp;					 <select name="dpyear" id="dpyear">
+                                             <option value="2012">2012</option>
+                                             <option value="2011" selected="selected">2011</option>
+                                             <option value="2010">2010</option>
+                                             <option value="2009">2009</option>
+                                             <option value="2008">2008</option>
+                                             <option value="2007">2007</option>
+                                             <option value="2006">2006</option>
+                                             <option value="2005">2005</option>
+                                             <option value="2004">2004</option>
+                                             <option value="2003">2003</option>
+                                             <option value="2002">2002</option>
+                                             <option value="2001">2001</option>
+                                             <option value="2000">2000</option>
+                                             <option value="1999">1999</option>
+                                             <option value="1998">1998</option>
+                                             <option value="1997">1997</option>
+                                             <option value="1996">1996</option>
+                                             <option value="1995">1995</option>
+                                             <option value="1994">1994</option>
+                                             <option value="1993">1993</option>
+                                             <option value="1992">1992</option>
+                                             <option value="1991">1991</option>
+                                             <option value="1990">1990</option>
+                                             <option value="1989">1989</option>
+                                             <option value="1988">1988</option>
+                                             <option value="1987">1987</option>
+                                             <option value="1986">1986</option>
+                                             <option value="1985">1985</option>
+                                         </select>-->
+        </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label" for="equipment">Type of Equipment: </label>
+        <div class="col-sm-9">
+            <input name="equipment" id="equipment" type="text" class="form-control" data-ng-model="form.equipment" />
+        </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label" for="brand">Brand of Equipment: </label>
+        <div class="col-sm-9">
+            <input name="brand" id="brand" type="text" class="form-control" data-ng-model="form.brand" />
+        </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label" for="model">Model:</label>
+        <div class="col-sm-9">
+            <input name="model" id="model" type="text" class="form-control" data-ng-model="form.model" />
+        </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label" for="serial">Serial Number: </label>
+        <div class="col-sm-9">
+            <input name="serial" id="serial" type="text" class="form-control" data-ng-model="form.serial" />
+        </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label" for="serviceRequestDate">Service Request Date: </label>
+        <div class="col-sm-9">
+            <input type="date" id="serviceRequestDate" class="form-control" data-ng-model="form.serviceRequestDate" />
+            <!--<select name="srm" id="srm">
+                    <option selected="selected" value="1">January</option>
+                    <option value="2">February</option>
+                    <option value="3">March</option>
+                    <option value="4">April</option>
+                    <option value="5">May</option>
+                    <option value="6">June</option>
+                    <option value="7">July</option>
+                    <option value="8">August</option>
+                    <option value="9">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                </select>
+                /&nbsp;					<select name="srday" id="srday">
+                                            <option selected="selected" value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>
+                                            <option value="24">24</option>
+                                            <option value="25">25</option>
+                                            <option value="26">26</option>
+                                            <option value="27">27</option>
+                                            <option value="28">28</option>
+                                            <option value="29">29</option>
+                                            <option value="30">30</option>
+                                            <option value="31">31</option>
+                                        </select>
+                /&nbsp;					 <select name="sryear" id="sryear">
+                                             <option selected="selected" value="2011">2011</option>
+                                             <option value="2010">2010</option>
+                                             <option value="2009">2009</option>
+                                             <option value="2008">2008</option>
+                                             <option value="2007">2007</option>
+                                             <option value="2006">2006</option>
+                                             <option value="2005">2005</option>
+                                             <option value="2004">2004</option>
+                                             <option value="2003">2003</option>
+                                             <option value="2002">2002</option>
+                                             <option value="2001">2001</option>
+                                             <option value="2000">2000</option>
+                                             <option value="1999">1999</option>
+                                             <option value="1998">1998</option>
+                                             <option value="1997">1997</option>
+                                             <option value="1996">1996</option>
+                                             <option value="1995">1995</option>
+                                             <option value="1994">1994</option>
+                                             <option value="1993">1993</option>
+                                             <option value="1992">1992</option>
+                                             <option value="1991">1991</option>
+                                             <option value="1990">1990</option>
+                                             <option value="1989">1989</option>
+                                             <option value="1988">1988</option>
+                                             <option value="1987">1987</option>
+                                             <option value="1986">1986</option>
+                                             <option value="1985">1985</option>
+                                         </select>-->
+        </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label" for="problem">Describe Problem: </label>
+        <div class="col-sm-9">
+            <textarea name="problem" rows="7" id="problem" class="form-control" data-ng-model="form.problem"></textarea>
+        </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label" for="capt">Security Code (math): </label>
+        <div class="col-sm-9">
+            <img src="/img/background/captcha_img.png" alt="Captcha Image" /><br />
+            <br />
+            <input id="capt" name="capt" style="width: 80px" class="form-control" type="text" />
+        </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-3 col-sm-9">
+                <input name="request" value="1" type="hidden" />
+                <input name="Submit" value="Submit" type="submit" data-ng-click="submit(form)" class="btn btn-primary" />
+            </div>
+        </div>
+    </form>
+</section>
+<aside>
+    <h5>What is a Service Request? </h5>
+    <p>A Service Request is a simple way for the client to request maintenance or other services on fitness equipment </p>
+    <h5>Why do I need Date Purchased? </h5>
+    <p>We ask for as much information as possible about
+        the equipment you are requesting to be serviced. This way we have more
+        knowledge about what we can do to fix your equipment promptly and
+        efficiently.</p>
+    <h5>Can I contact by phone? </h5>
+    <p>602-722-9880</p>
+</aside>
+
+<!--div data-ng-controller="help">
+    <div id="messages" class="alert alert-success" data-ng-show="messages" data-ng-bind="messages"></div>
+    <div data-ng-show="progress.active()" style="color: red; font-size: 50px;">Sending&hellip;</div-->
+    <!--form name="helpForm" novalidate role="form">
+        <div class="form-group">
+            <label class="col-sm-3 control-label" for="name">Your Name </label>
+            <span class="label label-danger" data-ng-show="submitted && helpForm.name.$error.required">Required!</span>
+            <input type="text" name="name" data-ng-model="name" class="form-control" required />
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-3 control-label" for="email">Your E-mail address</label>
+            <span class="label label-danger" data-ng-show="submitted && helpForm.email.$error.required">Required!</span>
+            <span class="label label-danger" data-ng-show="submitted && helpForm.$error.email">Invalid email!</span>
+            <input type="email" name="email" data-ng-model="email" class="form-control" required />
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-3 control-label" for="subjectList">What is the nature of your request?</label>
+            <span class="label label-danger" data-ng-show="submitted && helpForm.subjectList.$error.required">Required!</span>
+            <select name="subjectList" data-ng-model="subjectList" data-ng-options="id as value for (id, value) in subjectListOptions" class="form-control" required>
+                <option value=""></option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-3 control-label" for="url">URL of Relevant Page</label>
+            <span class="label label-danger" data-ng-show="submitted && helpForm.$error.url">Invalid URL format!</span>
+            <input type="url" name="url" data-ng-model="url" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-3 control-label" for="comments">Description</label>
+            <span class="label label-danger" data-ng-show="submitted && helpForm.comments.$error.required">Required!</span>
+            <textarea name="comments" data-ng-model="comments" class="form-control" required></textarea>
+        </div>
+
+        <button data-ng-disabled="progress.active()" data-ng-click="submit(helpForm)" class="btn btn-default">Submit</button>
+    </form>
+</div-->
