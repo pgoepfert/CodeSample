@@ -1,0 +1,176 @@
+﻿@charset "UTF-8";
+* { margin: 0; padding: 0; }
+body { background-color: #ccffff; font-size: 14px; font-family: 'Segoe UI', Tahoma, Arial, 'Helvetica Neue', Helvetica, Verdana, sans-serif, sans-serif, serif }
+section { width: 332px;margin: 0 auto;}
+img { margin: 0 0 5px 0; border: none; }
+ul { list-style-type: square;}
+.ContentHeader { float: right; text-align: center; font-size: 29px; font-family: Georgia, "Times New Roman", Times, serif; }
+.paragraph { float: right; width: 750px; text-align: center; }
+h1 { padding: 0 0 5px 0;color: #252663;font-family: Verdana, sans-serif, serif;font-size: 18px; }
+#wrapper { margin: 0 auto; width: 990px; }
+#container { clear: left; background: #ffffff; }
+.content { overflow: hidden; padding: 10px; width: auto; text-align: center; word-spacing: normal; }
+	.content img { margin: 12px; }
+	.content p { text-align: left; }
+.footer { position: relative; clear: both; padding: 10px 0; height: 50px; background: #CCC49F; font-size: 11px; font-family: Tahoma; }
+	.footer a { font-size: 11px; }
+	.footer .links { margin: 0 auto; width: 990px; text-align: center; }
+		.footer .links ul { clear: left; padding: 0 0 0 265px; list-style-type: none; }
+	.footer ul li { float: left; margin: 0 0 7px 0; padding: 0 10px 0 10px; border-right: 1px solid #444444; }
+	.footer .links .last { border: 0; }
+.header { background: #ADB96E; }
+#apDiv1 { position: absolute; top: 162px; left: 131px; z-index: 1; visibility: hidden; width: 1079px; height: 309px; }
+#apDiv2 { position: absolute; top: 151px; left: 140px; z-index: 2; width: 401px; height: 239px; }
+#apDiv3 { position: absolute; top: 142px; left: 150px; z-index: 2; width: 1058px; height: 420px; }
+#apDiv4 { position: absolute; top: 173px; left: 593px; z-index: 3; width: 464px; height: 65px; }
+.sidebar1 { float: left; padding-bottom: 10px; width: 180px; background: #EADCAE; }
+ul.nav { margin-bottom: 15px; /* this creates the space between the navigation on the content below */ border-top: 1px solid #666; /* this creates the top border for the links - all others are placed using a bottom border on the LI */ list-style: none; /* this removes the list marker */ }
+.contactUsFormLft { float: left; clear: left;padding: 0 8px 8px 0; width: 415px; color: #444444; vertical-align: top; white-space: nowrap; font: bold 14px 'Segoe UI', Tahoma, Arial, 'Helvetica Neue', Helvetica, Verdana, sans-serif;text-align: right; }
+.contactUsFormRt { padding-bottom: 8px; color: #444444; vertical-align: top; font: normal 14px 'Segoe UI', Tahoma, Arial, 'Helvetica Neue', Helvetica, Verdana, sans-serif;text-align: left; }
+.contactUsFormRt section { text-align: center;}
+.contactUsFormTxt { padding: 8px 0 0 0; }
+.contactUsFormTxtBox { width: 219px; color: #444444; font: normal 14px 'Segoe UI', Tahoma, Arial, 'Helvetica Neue', Helvetica, Verdana, sans-serif; }
+.contactUsFormDDL { width: 225px; }
+.contactUsFormLbl { line-height: 20px; }
+.req { color: #CC0000; }
+#ContentPlaceHolder1_valSummary { padding: 0 0 15px 30px;width: 345px;margin: 0 auto; }
+#ContentPlaceHolder1_valSummary ul { text-align: left;}
+
+
+
+/* SpryMenuBarHorizontal.css - version 0.6 - Spry Pre-Release 1.6.1 */
+
+
+
+/* Copyright (c) 2006. Adobe Systems Incorporated. All rights reserved. */
+
+
+
+/*******************************************************************************
+
+
+
+ LAYOUT INFORMATION: describes box model, positioning, z-order
+
+
+
+ *******************************************************************************/
+
+
+
+/* The outermost container of the Menu Bar, an auto width box with no margin or padding */
+
+ul.MenuBarHorizontal { list-style-type: none; font-size: 16px; cursor: default; width: auto; font-family: Georgia, "Times New Roman", Times, serif; font-style: normal; text-align: center; margin: 0; padding: 0; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; }
+
+/* Set the active Menu Bar with this class, currently setting z-index to accomodate IE rendering bug: http://therealcrisp.xs4all.nl/meuk/IE-zindexbug.html */
+
+ul.MenuBarActive { z-index: 1000; }
+
+/* Menu item containers, position children relative to this container and are a fixed width */
+
+ul.MenuBarHorizontal li { margin: 0; list-style-type: none; font-size: 100%; position: relative; text-align: center; cursor: pointer; width: 165px; float: left; background-color: #ccffff; padding: 0; /*left: 118px;*/ }
+
+/* Submenus should appear below their parent (top: 0) with a higher z-index, but they are initially off the left side of the screen (-1000em) */
+
+ul.MenuBarHorizontal ul { margin: 0; padding: 0; list-style-type: none; font-size: 100%; z-index: 1020; cursor: default; width: 8.2em; position: absolute; left: -1000em; }
+
+	/* Submenu that is showing with class designation MenuBarSubmenuVisible, we set left to auto so it comes onto the screen below its parent menu item */
+
+	ul.MenuBarHorizontal ul.MenuBarSubmenuVisible { left: auto; }
+
+	/* Menu item containers are same fixed width as parent */
+
+	ul.MenuBarHorizontal ul li { width: 8.2em; }
+
+	/* Submenus should appear slightly overlapping to the right (95%) and up (-5%) */
+
+	ul.MenuBarHorizontal ul ul { position: absolute; margin: -5% 0 0 95%; }
+
+	/* Submenu that is showing with class designation MenuBarSubmenuVisible, we set left to 0 so it comes onto the screen */
+
+	ul.MenuBarHorizontal ul.MenuBarSubmenuVisible ul.MenuBarSubmenuVisible { left: auto; top: 0; }
+
+
+
+/*******************************************************************************
+
+
+
+ DESIGN INFORMATION: describes color scheme, borders, fonts
+
+
+
+ *******************************************************************************/
+
+
+
+/* Submenu containers have borders on all sides */
+
+ul.MenuBarHorizontal ul { border: 1px solid #CCC; }
+
+/* Menu items are a light gray block with padding and no text decoration */
+
+ul.MenuBarHorizontal a { display: block; cursor: pointer; background-color: #333; padding: 0.5em 0.75em; color: #CCC; text-decoration: none; }
+
+	/* Menu items that have mouse over or focus have a blue background and white text */
+
+	ul.MenuBarHorizontal a:hover, ul.MenuBarHorizontal a:focus { background-color: #33C; color: #FFF; }
+
+	/* Menu items that are open with submenus are set to MenuBarItemHover with a blue background and white text */
+
+	ul.MenuBarHorizontal a.MenuBarItemHover, ul.MenuBarHorizontal a.MenuBarItemSubmenuHover, ul.MenuBarHorizontal a.MenuBarSubmenuVisible { background-color: #33C; color: #FFF; }
+
+
+
+	/*******************************************************************************
+
+
+
+ SUBMENU INDICATION: styles if there is a submenu under a given menu item
+
+
+
+ *******************************************************************************/
+
+
+
+	/* Menu items that have a submenu have the class designation MenuBarItemSubmenu and are set to use a background image positioned on the far left (95%) and centered vertically (50%) */
+
+	ul.MenuBarHorizontal a.MenuBarItemSubmenu { background-image: url('/Common/Images/SpryMenuBarDown.gif'); background-repeat: no-repeat; background-position: 95% 50%; }
+
+/* Menu items that have a submenu have the class designation MenuBarItemSubmenu and are set to use a background image positioned on the far left (95%) and centered vertically (50%) */
+
+ul.MenuBarHorizontal ul a.MenuBarItemSubmenu { background-image: url('/Common/Images/SpryMenuBarRight.gif'); background-repeat: no-repeat; background-position: 95% 50%; }
+
+/* Menu items that are open with submenus have the class designation MenuBarItemSubmenuHover and are set to use a "hover" background image positioned on the far left (95%) and centered vertically (50%) */
+
+ul.MenuBarHorizontal a.MenuBarItemSubmenuHover { background-image: url('/Common/Images/SpryMenuBarDownHover.gif'); background-repeat: no-repeat; background-position: 95% 50%; }
+
+/* Menu items that are open with submenus have the class designation MenuBarItemSubmenuHover and are set to use a "hover" background image positioned on the far left (95%) and centered vertically (50%) */
+
+ul.MenuBarHorizontal ul a.MenuBarItemSubmenuHover { background-image: url('/Common/Images/SpryMenuBarRightHover.gif'); background-repeat: no-repeat; background-position: 95% 50%; }
+
+
+
+/*******************************************************************************
+
+
+
+ BROWSER HACKS: the hacks below should not be changed unless you are an expert
+
+
+
+ *******************************************************************************/
+
+
+
+/* HACK FOR IE: to make sure the sub menus show above form controls, we underlay each submenu with an iframe */
+
+ul.MenuBarHorizontal iframe { position: absolute; z-index: 1010; filter: alpha(opacity:0.1); }
+
+/* HACK FOR IE: to stabilize appearance of menu items; the slash in float is to keep IE 5.0 from parsing */
+
+@media screen, projection {
+
+	ul.MenuBarHorizontal li.MenuBarItemIE { display: inline; f\loat: left; background: #FFF; }
+}

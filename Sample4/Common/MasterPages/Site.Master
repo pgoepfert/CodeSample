@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="ScottsdaleModelFlyers.Common.MasterPages.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+	<title>Scottsdale Model Flyers</title>
+	<link href="/Common/CSS/smf.css" rel="stylesheet" />
+	<script src="/Common/JS/jquery-1.8.3.min.js"></script>
+	<!--[if lte IE 8]>
+	<script src="/Common/JS/modernizr.custom.js"></script>
+		<![endif]-->
+	<script src="/Common/JS/SpryMenuBar.js"></script>
+	<script src="/Common/JS/SpryCollapsiblePanel.js"></script>
+	<script src="/Common/JS/smf.js"></script>
+	<asp:ContentPlaceHolder ID="head" runat="server">
+	</asp:ContentPlaceHolder>
+</head>
+<body class="no-js">
+	<form id="form1" runat="server">
+		<div id="wrapper">
+			<SMF:Banner runat="server" ID="SMFBanner" />
+			<SMF:Navigation runat="server" ID="SMFNav" />
+			<div id="container">
+				<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+				</asp:ContentPlaceHolder>
+			</div>
+			<SMF:Footer runat="server" ID="SMFFooter" />
+		</div>
+	</form>
+	<script type="text/javascript">
+		//<![CDATA[
+		var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", { imgDown: "/Common/Images/SpryMenuBarDownHover.gif", imgRight: "/Common/Images/SpryMenuBarRightHover.gif" });
+		//]]>
+	</script>
+</body>
+</html>
